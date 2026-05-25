@@ -59,10 +59,10 @@ function App() {
         setA(++a);
         console.log(a);
     }
-    // const onClickHandlerZero = () => {
-    //     setA(a = 0);
-    //     console.log(a);
-    // }
+    const onClickHandlerZero = () => {
+        setA(a = 0);
+        console.log(a);
+    }
 
   return (
       // <>
@@ -93,7 +93,7 @@ function App() {
 
           <h1>{a}</h1>
           <button onClick={onClickHandlerPlus}>plus</button>
-          {/*<button onClick={onClickHandlerZero}>zero</button>*/}
+          <button onClick={onClickHandlerZero}>zero</button>
         </div>
       // </>
   )
