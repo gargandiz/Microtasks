@@ -48,9 +48,9 @@ function App() {
   const Button_2_Foo = (subscriber: string) => {
     console.log(subscriber)
   }
-  // const Button_3_Foo = () => {
-  //   console.log("I'm stupid button")
-  // }
+  const Button_3_Foo = () => {
+    console.log("I'm stupid button")
+  }
   return (
       <>
         {/*<div>*/}
@@ -75,7 +75,7 @@ function App() {
         {/*            <NewComponent students={students}/>*/}
         <Button name="My YouTube Channel_1" callBack={() =>Button_1_Foo("I'm Vasia", 21, "A'm from Kharkiv")}/>
         <Button name="My YouTube Channel_2" callBack={() => Button_2_Foo("I'm Ivan")}/>
-        {/*<Button name="Button_3" callBack={Button_3_Foo}/>*/}
+        <Button name="Button_3" callBack={Button_3_Foo}/>
       </>
   )
 }
