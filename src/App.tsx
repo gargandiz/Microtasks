@@ -42,18 +42,27 @@ function App() {
   //     console.log(message);
   // }
 //=========================================================================================================
-  const Button_1_Foo = (subscriber: string, age: number, address: string) => {
-    console.log(subscriber, age, address)
-  }
-  const Button_2_Foo = (subscriber: string) => {
-    console.log(subscriber)
-  }
-  const Button_3_Foo = () => {
-    console.log("I'm stupid button")
-  }
+//   const Button_1_Foo = (subscriber: string, age: number, address: string) => {
+//     console.log(subscriber, age, address)
+//   }
+//   const Button_2_Foo = (subscriber: string) => {
+//     console.log(subscriber)
+//   }
+//   const Button_3_Foo = () => {
+//     console.log("I'm stupid button")
+//   }
+//=========================================================================================================
+
+    // let a = 1;
+    let [a, setA] = useState(1)
+    const onClickHandler = () => {
+        setA(++a);
+        console.log(a);
+    }
   return (
-      <>
-        {/*<div>*/}
+      // <>
+        <div className="App">
+
         {/*=========================================================================================================*/}
         {/*<button onClick={(event) => {myFirstSubscriber()}}>My YouTube Channel-1</button>*/}
         {/*<button onClick={(event) => {mySecondSubscriber()}}>My YouTube Channel-2</button>*/}
@@ -68,15 +77,19 @@ function App() {
         {/*=========================================================================================================*/}
         {/*                <button>My YouTube Channel-1</button>*/}
         {/*                <button>My YouTube Channel-2</button>*/}
-        {/*            </div>*/}
         {/*            <Header title={'New Header'}/>*/}
         {/*            <Body title={'New Body'}/>*/}
         {/*            <Footer title={'new Footer'}/>*/}
         {/*            <NewComponent students={students}/>*/}
-        <Button name="My YouTube Channel_1" callBack={() =>Button_1_Foo("I'm Vasia", 21, "A'm from Kharkiv")}/>
-        <Button name="My YouTube Channel_2" callBack={() => Button_2_Foo("I'm Ivan")}/>
-        <Button name="Button_3" callBack={Button_3_Foo}/>
-      </>
+        {/*<Button name="My YouTube Channel_1" callBack={() =>Button_1_Foo("I'm Vasia", 21, "A'm from Kharkiv")}/>*/}
+        {/*<Button name="My YouTube Channel_2" callBack={() => Button_2_Foo("I'm Ivan")}/>*/}
+        {/*<Button name="Button_3" callBack={Button_3_Foo}/>*/}
+        {/*=========================================================================================================*/}
+
+          <h1>{a}</h1>
+          <button onClick={onClickHandler}>plus</button>
+        </div>
+      // </>
   )
 }
 
