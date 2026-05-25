@@ -11,16 +11,16 @@ type StudentType = {
     age: number
 }
 
-type CarsType = {
-    manufacturer: string,
-    model: string
-}
+// type CarsType = {
+//     manufacturer: string,
+//     model: string
+// }
 
 export const NewComponent = (props: NewComponentType) => {
-    const topCars = [
-        {manufacturer: 'Mercedes', model: 'e63s'},
-        {manufacturer: 'Audi', model: 'rs6'}
-    ]
+    // const topCars = [
+    //     {manufacturer: 'Mercedes', model: 'e63s'},
+    //     {manufacturer: 'Audi', model: 'rs6'}
+    // ]
 
     return (
         <>
@@ -34,24 +34,23 @@ export const NewComponent = (props: NewComponentType) => {
                     )
                 })}
             </ul>
-            <table>
-                <tr>
-                    <th>Number</th>
-                    <th>Manufacturer</th>
-                    <th>Model</th>
-                </tr>
-                {topCars.map((objFromTopCars, index) => {
-                    index +=1;
-                    return (
-                    <tr>
-                        <th>{index}</th>
-                        <th>{objFromTopCars.manufacturer}</th>
-                        <th>{objFromTopCars.model}</th>
-                    </tr>
-                    )
-                })}
-
-            </table>
+            {/*<table>*/}
+            {/*    <tr>*/}
+            {/*        <th>Number</th>*/}
+            {/*        <th>Manufacturer</th>*/}
+            {/*        <th>Model</th>*/}
+            {/*    </tr>*/}
+            {/*    {topCars.map((objFromTopCars, index) => {*/}
+            {/*        index +=1;*/}
+            {/*        return (*/}
+            {/*        <tr>*/}
+            {/*            <th>{index}</th>*/}
+            {/*            <th>{objFromTopCars.manufacturer}</th>*/}
+            {/*            <th>{objFromTopCars.model}</th>*/}
+            {/*        </tr>*/}
+            {/*        )*/}
+            {/*    })}*/}
+            {/*</table>*/}
         </>
     )
 }

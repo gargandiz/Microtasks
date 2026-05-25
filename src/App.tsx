@@ -69,10 +69,10 @@ function App() {
         {/*                <button>My YouTube Channel-1</button>*/}
         {/*                <button>My YouTube Channel-2</button>*/}
         {/*            </div>*/}
-                    <Header title={'New Header'}/>
-                    <Body title={'New Body'}/>
-                    <Footer title={'new Footer'}/>
-        {/*            <NewComponent students={students}/>*/}
+        {/*            <Header title={'New Header'}/>*/}
+        {/*            <Body title={'New Body'}/>*/}
+        {/*            <Footer title={'new Footer'}/>*/}
+                    <NewComponent students={students}/>
         {/*<Button name="My YouTube Channel_1" callBack={() =>Button_1_Foo("I'm Vasia", 21, "A'm from Kharkiv")}/>*/}
         {/*<Button name="My YouTube Channel_2" callBack={() => Button_2_Foo("I'm Ivan")}/>*/}
         {/*<Button name="Button_3" callBack={Button_3_Foo}/>*/}
