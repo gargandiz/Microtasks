@@ -71,7 +71,7 @@ function App() {
         {/*            </div>*/}
                     <Header title={'New Header'}/>
                     <Body title={'New Body'}/>
-        {/*            <Footer title={'new Footer'}/>*/}
+                    <Footer title={'new Footer'}/>
         {/*            <NewComponent students={students}/>*/}
         {/*<Button name="My YouTube Channel_1" callBack={() =>Button_1_Foo("I'm Vasia", 21, "A'm from Kharkiv")}/>*/}
         {/*<Button name="My YouTube Channel_2" callBack={() => Button_2_Foo("I'm Ivan")}/>*/}
